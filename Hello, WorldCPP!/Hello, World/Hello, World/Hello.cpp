@@ -3,10 +3,9 @@ using namespace std;
 
 void calc()
 {
-	double a;
-	double b;
-	double r;
+	double a, b, r;
 	char s;
+
 	cout << "Vvesti pervoe chislo: ";
 	cin >> a;
 	cout << "vvesti vtoroe chislo: ";
@@ -14,6 +13,7 @@ void calc()
 	cout << "Vvedite operaciy kotoruy nado proizvesti:\n";
 	cout << "+, -, /, *\n";
 	cin >> s;
+	
 	switch (s)
 	{
 		case '+':	r = a + b;	break;
@@ -24,6 +24,7 @@ void calc()
 		default: cout << "neverniy simvol\n";
 			break;
 	}
+	
 	cout << "a " << s << " b = r" << endl;
 	cout << a <<" "<< s <<" "<< b << " = " << r << endl;
 }
