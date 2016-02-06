@@ -3,9 +3,10 @@ using namespace std;
 
 void calc()
 {
-	double a, b, r;
-	char s;
+	double a, b, r;	//Переменные a и b являются произвольными числами, а r является производной
+	char s; //символьная переменная в которую записывается оператор (сложение, умножение, деление, вычитание)
 
+	//ввод/вывод всякой пояснительной фигни
 	cout << "Vvesti pervoe chislo: ";
 	cin >> a;
 	cout << "vvesti vtoroe chislo: ";
@@ -14,6 +15,7 @@ void calc()
 	cout << "+, -, /, *\n";
 	cin >> s;
 	
+	//оператор switch в котором происходит выбор операции
 	switch (s)
 	{
 		case '+':	r = a + b;	break;
@@ -25,6 +27,7 @@ void calc()
 			break;
 	}
 	
+	//вывод результата
 	cout << "a " << s << " b = r" << endl;
 	cout << a <<" "<< s <<" "<< b << " = " << r << endl;
 }
